@@ -86,8 +86,10 @@ basic.forever(function () {
     }
 })
 control.inBackground(function () {
-    basic.showIcon(IconNames.Heart)
-    basic.pause(200)
-    basic.showIcon(IconNames.SmallHeart)
-    basic.pause(200)
+    while (true) {
+        basic.showIcon(IconNames.Heart)
+        basic.pause(200)
+        basic.showIcon(IconNames.SmallHeart)
+        basic.pause(200)
+    }
 })
